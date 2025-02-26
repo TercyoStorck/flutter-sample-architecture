@@ -1,0 +1,7 @@
+Put files here that are custom widsgets controllers like a TextEditingController with some implementations.
+
+example:
+
+class CustomTextEditingController extends TextEditingController {
+    ... Custom implementation here.
+}

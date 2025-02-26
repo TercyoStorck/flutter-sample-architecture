@@ -1,0 +1,47 @@
+name: flutter_sample_architecture
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  #Core
+  environment_widget: ^1.2.0
+  modular_router:
+    git: https://github.com/TercyoStorck/modular_router
+  depin:
+    git: https://github.com/TercyoStorck/depin
+  internationalization:
+    git: https://github.com/TercyoStorck/internationalization
+  rxstream: ^1.0.0
+  easy_dynamic_theme: ^2.3.1
+  dio: ^5.8.0+1
+  retrofit: ^4.4.2
+  sembast: ^3.8.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path: ^1.9.0
+  path_provider: ^2.1.5
+  collection: ^1.18.0
+  #Project libraries
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.9
+  retrofit_generator: ^9.1.5
+
+flutter:
+  uses-material-design: true
+  assets:
+    - ./assets/translations/

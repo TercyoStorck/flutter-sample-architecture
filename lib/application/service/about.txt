@@ -1,0 +1,1 @@
+- Service Application is where you'll put services that'll uses on Controllers and/or Views.

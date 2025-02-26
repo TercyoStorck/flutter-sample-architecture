@@ -1,0 +1,1 @@
+- Create the interfaces that represents your repository implementation in infrastructure layer.
