@@ -1,0 +1,2 @@
+- A layer that represents your bussines logic.
+- A (Domain Driven Design) abstraction.

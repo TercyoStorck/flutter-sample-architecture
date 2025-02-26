@@ -1,0 +1,2 @@
+- Create your controllers here, however it are. (ViewModel, BloC, Controller, etc)
+- Controllers are only the logical part of the views. NEVER do business logic in a controller!

@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        //Default
+        {
+            "name": "Default - Development",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--verbose"
+            ],
+            "flutterMode": "debug",
+            "program": "${workspaceFolder}/lib/infrastructure/environments/default/development.dart"
+        },
+        {
+            "name": "Default - Homologation",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "${workspaceFolder}/lib/infrastructure/environments/default/homologation.dart"
+        },
+        {
+            "name": "Default - Production",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "${workspaceFolder}/lib/infrastructure/environments/default/production.dart"
+        },
+    ]
+}

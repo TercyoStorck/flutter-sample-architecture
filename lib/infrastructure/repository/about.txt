@@ -1,0 +1,2 @@
+- Repository is your SSoT (Single Source of Truth);
+- Here you'll implements all repository interfaces created on domain layer;

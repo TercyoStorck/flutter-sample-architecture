@@ -1,0 +1,3 @@
+- Put here your views (pages)
+- Create a folder that represents each module created in application/module/modules
+- Create views inside that folders

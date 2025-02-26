@@ -1,0 +1,5 @@
+- Crete services here like:
+    - API's call
+    - Bluetooth print call
+    - Etc...
+- Create a folder for each Service;

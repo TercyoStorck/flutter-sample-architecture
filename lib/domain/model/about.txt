@@ -1,0 +1,2 @@
+- Create your objects that are your business logic here. This is a DDD (Domain Driven Design) pattern abstraction.
+- Use ValueObjects to get more cleaning code

@@ -1,0 +1,3 @@
+- DAL is a Data Access Layer. Put here all logic that have data (storage)
+- Create a folder for each of database you're using. Best practices. (sembast, hive, sqlite, etc)
+- Each database implementation must have a entity and dao folder

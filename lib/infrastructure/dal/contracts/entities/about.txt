@@ -1,0 +1,2 @@
+- Interfaces of Entities
+- Entity is a represetation of a table (or collation) in your database. They have only logic about manager data.
