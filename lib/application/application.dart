@@ -4,7 +4,11 @@ import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 import 'package:environment_widget/environment_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_sample_architecture/application/module/modules/movie/movie.dart';
 import 'package:flutter_sample_architecture/application/service/internationalization.dart';
+import 'package:flutter_sample_architecture/infrastructure/dal/dal.dart';
+import 'package:flutter_sample_architecture/infrastructure/repository/repository.dart';
+import 'package:flutter_sample_architecture/infrastructure/service/service.dart';
 
 import 'module/modules.dart';
 
@@ -21,7 +25,16 @@ class Application extends StatefulWidget {
 
 class _ApplicationState extends State<Application> {
   final GlobalKey<NavigatorState> _globalNavigatorKey = GlobalKey<NavigatorState>();
-  final _modules = Modules();
+  final _modules = Modules(
+    modules: [
+      MovieModule(),
+    ],
+    injectionGroups: [
+      DalInjectionGroup(),
+      RepositoryInjectionGroup(),
+      ServiceInjectionGroup(),
+    ],
+  );
 
   @override
   Widget build(BuildContext context) {

@@ -10,7 +10,7 @@ final ThemeData lightThemeData = ThemeData(
   appBarTheme: AppBarTheme(
     color: ThemeColors.blue[500],
     systemOverlayStyle: const SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,//ThemeColors.blue[500],
+      statusBarColor: Colors.transparent, //ThemeColors.blue[500],
     ),
     titleTextStyle: TextStyle(
       color: ThemeColors.grey[800],
@@ -155,9 +155,9 @@ final ThemeData darkThemeData = lightThemeData.copyWith(
   primaryColor: ThemeColors.grey[800],
   scaffoldBackgroundColor: ThemeColors.blue[500],
   appBarTheme: AppBarTheme(
-    color: ThemeColors.blue[500],
+    color: ThemeColors.grey[800],
     systemOverlayStyle: const SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,//ThemeColors.blue[500],
+      statusBarColor: Colors.transparent, //ThemeColors.blue[500],
     ),
     titleTextStyle: TextStyle(color: ThemeColors.grey[800]),
     iconTheme: IconThemeData(color: ThemeColors.grey[800]),
@@ -235,7 +235,6 @@ final ThemeData darkThemeData = lightThemeData.copyWith(
     ),
     filled: true,
     fillColor: ThemeColors.grey[800],
-    
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
@@ -284,7 +283,7 @@ final ThemeData darkThemeData = lightThemeData.copyWith(
     color: ThemeColors.grey[800],
   ),
   progressIndicatorTheme: ProgressIndicatorThemeData(
-    color: ThemeColors.blue[400],
+    color: ThemeColors.grey[800],
   ),
   checkboxTheme: CheckboxThemeData(
     checkColor: MaterialStateProperty.all(Colors.white),
@@ -297,6 +296,18 @@ final ThemeData darkThemeData = lightThemeData.copyWith(
     fillColor: MaterialStateProperty.all(ThemeColors.blue[400]),
   ),
   dialogBackgroundColor: ThemeColors.blue[500],
+  listTileTheme: ListTileThemeData(
+    titleTextStyle: TextStyle(
+      fontFamily: 'Outfit',
+      fontSize: 22.0,
+      color: ThemeColors.grey[800],
+    ),
+    subtitleTextStyle: TextStyle(
+      fontFamily: 'Outfit',
+      fontSize: 16.0,
+      color: ThemeColors.grey[500],
+    ),
+  ),
 );
 
 Color highlightEdgesColor(BuildContext context) {

@@ -1,1 +1,6 @@
-{}
+{
+    "movies": {
+        "appBarTitle": "Lista de filmes"
+    },
+    "movie": {}
+}

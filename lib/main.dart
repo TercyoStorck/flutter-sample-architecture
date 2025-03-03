@@ -2,6 +2,7 @@ import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 import 'package:environment_widget/environment_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sample_architecture/application/application.dart';
+import 'package:flutter_sample_architecture/infrastructure/dal/hive/dao/dao.dart' as hive;
 
 Future<EasyDynamicThemeWidget> run({
   required Environment environment,
@@ -9,8 +10,10 @@ Future<EasyDynamicThemeWidget> run({
 }) async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  await hive.DAO.initDatabase();
+
   return EasyDynamicThemeWidget(
-    initialThemeMode: ThemeMode.dark,
+    initialThemeMode: ThemeMode.light,
     child: Application(
       environment: environment,
     ),

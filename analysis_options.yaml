@@ -4,3 +4,6 @@ linter:
   rules:
     unnecessary_this: false
     use_key_in_widget_constructors: false
+analyzer:
+  errors:
+    avoid_renaming_method_parameters: ignore

@@ -2,6 +2,8 @@
 
 import 'package:flutter/foundation.dart';
 
+export 'exceptions.dart';
+
 abstract class ValueObject<T> {
   final T _value;
 
@@ -10,7 +12,7 @@ abstract class ValueObject<T> {
   }
 
   @protected
-  void validator();
+  void validator() {}
 
   T get value => _value;
 }

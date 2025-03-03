@@ -2,3 +2,5 @@
 
 class EmptyValidationException implements Exception {}
 class InvalidValueValidationException implements Exception {}
+class NoDataFoundException implements Exception {}
+class MaxDataFoundException implements Exception {}
