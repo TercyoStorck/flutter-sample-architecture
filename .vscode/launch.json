@@ -9,21 +9,21 @@
                 "--verbose"
             ],
             "flutterMode": "debug",
-            "program": "${workspaceFolder}/lib/infrastructure/environments/default/development.dart"
+            "program": "${workspaceFolder}/lib/application/schema/default/environment/development.dart"
         },
         {
             "name": "Default - Homologation",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
-            "program": "${workspaceFolder}/lib/infrastructure/environments/default/homologation.dart"
+            "program": "${workspaceFolder}/lib/application/schema/default/environment/homologation.dart"
         },
         {
             "name": "Default - Production",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
-            "program": "${workspaceFolder}/lib/infrastructure/environments/default/production.dart"
+            "program": "${workspaceFolder}/lib/application/schema/default/environment/production.dart"
         },
     ]
 }

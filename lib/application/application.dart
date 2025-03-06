@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_sample_architecture/application/module/modules/movie/movie.dart';
 import 'package:flutter_sample_architecture/application/service/internationalization.dart';
-import 'package:flutter_sample_architecture/infrastructure/dal/dal.dart';
-import 'package:flutter_sample_architecture/infrastructure/repository/repository.dart';
-import 'package:flutter_sample_architecture/infrastructure/service/service.dart';
+import 'package:flutter_sample_architecture/dal/local/dal.dart';
+import 'package:flutter_sample_architecture/dal/repository/repository.dart';
+import 'package:flutter_sample_architecture/dal/remote/service.dart';
 
 import 'module/modules.dart';
 
