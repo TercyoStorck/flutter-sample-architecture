@@ -4,11 +4,11 @@ import 'package:flutter_sample_architecture/dal/local/sembast/dao/dao.dart';
 import 'package:flutter_sample_architecture/dal/local/sembast/entities/movie/movie_entity.dart';
 
 class MovieDAO extends DAO<MovieEntityContract> implements MovieDAOContract {
-  @override
-  String get collection => 'movies';
-
-  @override
-  MovieEntityContract constructor(Map<String, dynamic> map) => MovieEntity.fromMap(map);
+  MovieDAO()
+      : super(
+          collectionName: 'movies',
+          constructor: MovieEntity.fromMap,
+        );
 
   @override
   Future<List<MovieEntityContract>> get({required int page}) {
@@ -36,7 +36,7 @@ class MovieDAO extends DAO<MovieEntityContract> implements MovieDAOContract {
 
     await super.delete(finder);
   }
-  
+
   @override
   Future<void> removeAllFromPage({required int page}) async {
     final finder = Finder(

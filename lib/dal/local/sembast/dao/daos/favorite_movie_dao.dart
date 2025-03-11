@@ -4,11 +4,11 @@ import 'package:flutter_sample_architecture/dal/local/sembast/dao/dao.dart';
 import 'package:flutter_sample_architecture/dal/local/sembast/entities/movie/movie_entity.dart';
 
 class FavoriteMovieDAO extends DAO<MovieEntityContract> implements FavoriteMovieDAOContract {
-  @override
-  String get collection => 'favoriteMovies';
-
-  @override
-  MovieEntityContract constructor(Map<String, dynamic> map) => MovieEntity.fromMap(map);
+  FavoriteMovieDAO()
+      : super(
+          collectionName: 'favoriteMovies',
+          constructor: MovieEntity.fromMap,
+        );
 
   @override
   Future<void> update(MovieEntityContract entity) async {

@@ -1,7 +1,7 @@
 import 'package:flutter_sample_architecture/domain/model/genre/genre.dart';
 import 'package:flutter_sample_architecture/dal/local/contracts/entities/entity.dart';
 
-abstract class GenreEntityContract extends EntityContract {
+abstract class GenreEntityContract implements EntityContract {
   final int id;
   final String name;
 

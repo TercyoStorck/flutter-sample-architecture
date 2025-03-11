@@ -1,6 +1,6 @@
 import 'package:flutter_sample_architecture/dal/local/contracts/entities/entity.dart';
 
-abstract class MoviesRequestInformationsEntityContract extends EntityContract {
+abstract class MoviesRequestInformationsEntityContract implements EntityContract {
   final int minimumDate;
   final int maximumDate;
   final int totalPages;

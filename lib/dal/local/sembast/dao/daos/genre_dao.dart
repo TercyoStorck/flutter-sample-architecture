@@ -4,11 +4,11 @@ import 'package:flutter_sample_architecture/dal/local/sembast/dao/dao.dart';
 import 'package:flutter_sample_architecture/dal/local/sembast/entities/genre/genre_entity.dart';
 
 class GenreDAO extends DAO<GenreEntityContract> implements GenreDAOContract {
-  @override
-  String get collection => 'genres';
-
-  @override
-  GenreEntityContract constructor(Map<String, dynamic> map) => GenreEntity.fromMap(map);
+  GenreDAO()
+      : super(
+          collectionName: 'genres',
+          constructor: GenreEntity.fromMap,
+        );
 
   @override
   Future<GenreEntityContract> get(int id) async {

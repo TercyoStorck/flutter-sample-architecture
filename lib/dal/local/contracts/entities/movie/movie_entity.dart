@@ -1,7 +1,7 @@
 import 'package:flutter_sample_architecture/domain/model/movie/movie.dart';
 import 'package:flutter_sample_architecture/dal/local/contracts/entities/entity.dart';
 
-abstract class MovieEntityContract extends EntityContract {
+abstract class MovieEntityContract implements EntityContract {
   final int id;
   final int? voteCount;
   final bool? video;

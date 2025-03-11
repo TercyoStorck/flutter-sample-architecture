@@ -1,3 +1,3 @@
-abstract class EntityContract {
+abstract interface class EntityContract {
   Map<String, dynamic> toMap();
 }
